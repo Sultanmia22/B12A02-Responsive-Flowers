@@ -22,3 +22,63 @@
   font-weight:normal;
   font-style: normal;
 }
+/*? all common styles code Start */
+:root{
+    --primary-color:rgba(233, 90, 8, 1);
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+/*? all common styles code End */
+/*! nav section */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+.nav-items{
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+.nav-cart{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-items li{
+   list-style: none;    
+}
+
+.nav-items a{
+    text-decoration: none;
+    font-family: "Inter",sans-serif;
+}
+.nav-items li:first-child a{
+    color: black;
+    font-weight: bold;
+}
+.nav-items li:not(:first-child) a{
+    color: rgba(137, 135, 161, 1);
+}
+/*! banner section */
+.banner{
+    display: flex;
+    align-items: center;
+    margin: 120px 0;
+}
+.banner-left{
+    max-width: 570px;
+}
+.banner-title{
+    font-size: 4rem;
+}
+.banner-title > span{
+    color:var(--primary-color);
+}
+.banner-discription{
+    font-size: 1.375rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 13px;
+}
