@@ -30,8 +30,14 @@
     max-width: 1140px;
     margin: 0 auto;
 }
+.hidden{
+    display: none;
+}
 /*? all common styles code End */
 /*! nav section */
+.nav-logo img {
+    width: 100%;
+}
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -81,4 +87,38 @@
     font-size: 1.375rem;
     color: rgba(0, 0, 0, 0.5);
     margin-top: 13px;
+}
+
+
+
+
+
+/*! responsive section */
+
+/* header section responsive */
+@media screen and (max-width:576px) {
+    .navbar{
+        padding:0 16px;
+    }
+    .header{
+        width: 100%;
+    }
+    .nav-items li{
+        display: none;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        margin: 20px 0 65px 0;
+    }
+    .banner-left{
+        width: 100%;
+        padding: 0 16px;
+    }
+     .banner-right {
+        margin-bottom: 28px;
+     }
+    .banner-right img{
+        width: 100%;
+    }
+   
 }
