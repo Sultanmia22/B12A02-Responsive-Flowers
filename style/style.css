@@ -25,6 +25,7 @@
 /*? all common styles code Start */
 :root{
     --primary-color:rgba(233, 90, 8, 1);
+    --secondary-color:rgba(0, 0, 0, 0.5);
 }
 .container{
     max-width: 1140px;
@@ -89,9 +90,54 @@
     margin-top: 13px;
 }
 
+/*! plant section */
+.plant-title,
+.plant-discription{
+    text-align: center;
+}
+.plant-title > span{
+    color: var(--primary-color);
+}
+.plant-title {
+    font-size: 3.125rem;
+}
+.plant-discription{
+    font-size: 1.375rem;
+    color: var(--secondary-color);
+    width:888px;
+    margin: 30px auto;
+}
 
+.box{
+    text-align: center;
+    font-family:"Inter";
+    width: 270px;
+}
 
+.box-title{
+    font-size: 1.375rem;
+    color:rgba(17, 17, 17, 1) ;
+    margin-top: 20px;
+    margin-bottom:15px;
+}
+.box-price{
+    font-size: 1.375rem;
+    color:rgba(17, 17, 17, 1) ;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
 
+.box-button a{
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+}
+.box-button {
+    padding:15px 50px;
+    border: none;
+    width:100%;
+    background-color: var(--primary-color);
+}
 
 /*! responsive section */
 
