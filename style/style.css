@@ -393,14 +393,40 @@ body{
     background-color: var(--primary-color);
 }
 
-
+/* footer section */
+.footer-section{
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 160px;
+}
+.footer-one{
+    width:300px;
+}
+.footer-one p{
+    font-size: 1.375rem;
+    color: var(--secondary-color);
+}
+.footer-section ul li{
+    list-style: none;
+    padding-bottom: 32px;
+}
+.footer-section ul li a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-family: "Inter", sans-serif;
+}
+.footer-link a{
+   margin-right: 24px;
+}
 /*! responsive section */
 
 /* header section responsive */
 @media screen and (max-width:576px) {
   
     .navbar{
-        padding:0 16px;
+        padding:20px 16px;
     }
     .header{
         width: 100%;
@@ -511,4 +537,32 @@ body{
    .subscribe-btn{
     padding: 15px 30px;
    }
+
+   /* footer section */
+   .footer-section{
+    width: 100%;
+    flex-direction: column;
+    padding:50px 16px;
+   }
+   .footer-one{
+    margin-bottom: 30px;
+   }
+   .footer-one p{
+    font-size: 16px;
+    margin-top: 10px;
+   }
+
+   .banner-title,
+   .plant-title,
+   .lover-right-title,
+   .deals-title{
+     font-size:1.5rem;
+   }
+
+  .banner-discription,
+  .plant-discription,
+  .lover-list li,
+  .deals-description{
+    font-size:1rem;
+  }
 }
